@@ -1,0 +1,23 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.div {
+    display:flex;
+    
+    justify-content: center;
+    min-height: 20vh;
+}
+.nav {
+    position: relative;
+    display: flex;
+}
+.nav a {
+    position: relative;
+    margin:0 20px;
+    font-size: 2em;
+    color:#000;
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+.card {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-color: #122936;
+    border-radius: 20px;
+}
+
+.card .imgbx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.card .imgbx img {
+    max-width: 50%;
+}
+
+.card .nombre {
+    position: relative;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .nombre h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
