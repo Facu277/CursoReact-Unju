@@ -1,50 +1,60 @@
-import React from "react";
-import anime from "../../json/personaje.json"
-import "./detallesstyle.css";
-export default class Detail extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      currentElement: anime.Characters[0],
-    };
-  }
-  onChangeInput = (event) => {
-    this.setState(() => {
+
+import React, { useState } from 'react';
+import { useParams } from 'react-router';
+import "./detallesstyle.css"; 
+export default function Detail(props) {
+  const onepunch=props.onepunch
+  console.log(onepunch)
+
+
+
+  const [state, setState] = useState({
+    currentElement: onepunch[0] = {
+      id:onepunch.id,
+      name:onepunch.name,
+      edad:onepunch.age,
+      photo:onepunch.photo,
+      ciudad:onepunch.ciudad,rango:onepunch.rango,asociacion:onepunch.asociacion
+    }
+  })
+
+
+
+  const onChangeInput=(event) => {
+    setState(()=>{
       return {
-        currentElement: anime.Characters.find(
-          (element) => element.id == event.target.value
-        ),
-      };
-    });
-  };
-  render() {
-    return (
+        currentElement: onepunch.find((element) => element.id == event.target.value)
+      }
+    })
+  }
+
+  return (
+    <div className="container">
+      <select onChange={(event) => {onChangeInput(event)}}>
+
+
+
+        {onepunch.map((element)=> (
+          <option value={element.id}>
+            {element.name}
+          </option>
+        ))}
+      </select>
+
       <div className="container">
-        <select
-          onChange={(event) => {
-            this.onChangeInput(event);
-          }}
-        >
-          {anime.Characters.map((element) => (
-            <option value={element.id}>
-              {element.name}
-            </option>
-          ))}
-        </select>
-        <div className="container">
           <h3>
-            {this.state.currentElement.name}
+            {state.currentElement.name}
           </h3>
           <div>
-            <img src={this.state.currentElement.photo}></img>
+            <img src={state.currentElement.photo}></img>
           </div>
           <h3> Character Details</h3>
-          <p> Edad: {this.state.currentElement.age + " años"}</p>
-          <p> Ciudad: {this.state.currentElement.ciudad}</p>
-          <p>Rango: {this.state.currentElement.rango}</p>
-          <p>Asociacion: {this.state.currentElement.asociacion}</p>
+          <p> Edad: {state.currentElement.edad + " años"}</p>
+          <p> Ciudad: {state.currentElement.ciudad}</p>
+          <p>Rango: {state.currentElement.rango}</p>
+          <p>Asociacion: {state.currentElement.asociacion}</p>
         </div>
-      </div>
-    );
-  }
+
+    </div>
+  );
 }

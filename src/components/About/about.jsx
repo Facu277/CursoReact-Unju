@@ -1,6 +1,7 @@
 import React from "react";
 export default class About extends React.Component {
-  render() {
+  render()
+  {
     return (
       <div>
         <h6><br Facundo Ivan Alfaro /></h6>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './characterstyle.css'
-export default class Navbar extends React.Component {
+import { Link, NavLink} from 'react-router-dom';
+/* export default class Character extends React.Component {
     constructor(props){
         super()
     }
@@ -18,4 +19,17 @@ export default class Navbar extends React.Component {
             
         );
     }
+} */
+
+export default function Character({url,name}) {
+       return (
+        <div className="card">
+            <div className="imgbx">
+                <img src={url} alt="" />
+            </div>
+            <div className="nombre">
+                <h3>{name}</h3>
+            </div>
+        </div>
+       )
 }

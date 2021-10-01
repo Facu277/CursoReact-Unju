@@ -36,6 +36,48 @@
             "ciudad":"Ciudad A",
             "rango": "N/A",
             "asociacion":"Ninguna"
+        },{   "id":"5",
+            "name": "Amai Mask",
+            "age": 24,
+            "photo": "https://laverdadnoticias.com/__export/1604082500835/sites/laverdad/img/2020/10/30/amai_mask_one_punch_man.png_410945991.png",
+            "ciudad":"Ciudad A",
+            "rango": "1 A",
+            "asociacion":"Asociacion de Heroes"
+        },{   "id":"6",
+            "name": "Genus",
+            "age": 100,
+            "photo": "https://cdn.myanimelist.net/images/characters/5/293988.jpg",
+            "ciudad":"Ciudad S",
+            "rango": "Lider",
+            "asociacion":"Casa de la Evolucion"
+        },{   "id":"7",
+            "name": "Charanko",
+            "age": 16,
+            "photo": "https://otakotaku.com/asset/img/character/2016/01/charanko.jpg",
+            "ciudad":"Ciudad A",
+            "rango": "Aprendiz",
+            "asociacion":"Dojo de Bang"
+        },{   "id":"8",
+            "name": "Kamikaze",
+            "age": 37,
+            "photo": "http://pm1.narvii.com/6785/3e8c715c509ff1137a3be83537afb6371b6639dfv2_00.jpg",
+            "ciudad":"Ciudad B",
+            "rango": "4 S",
+            "asociacion":"Asociacion de Heroes"
+        },{   "id":"9",
+            "name": "Kingu",
+            "age": 29,
+            "photo": "https://cdn.alfabetajuega.com/wp-content/uploads/2019/07/king-one-punch-man.jpg",
+            "ciudad":"Ciudad M",
+            "rango": "7 S",
+            "asociacion":"Asociacion de Heroes"
+        },{   "id":"10",
+            "name": "Ciempies M.",
+            "age": 1000,
+            "photo": "https://www.tierragamer.com/wp-content/uploads/2019/07/One-Punch-Man-2-Episodio-12-04.jpg",
+            "ciudad":"Ciudad S",
+            "rango": "Dragon",
+            "asociacion":"Asociacion de Monstruos"
         }
     ]
 }
